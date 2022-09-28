@@ -9,6 +9,7 @@ let panel = document.querySelector("#app__cards");
 
 function mostrar(titulo, current, previus){
     panel.innerHTML += `<div class="app__${titulo.toLowerCase().split(/\s+/).join('')}">
+        <div class="app__${titulo.toLowerCase().split(/\s+/).join('')}__img"><img src="/images/icon-${titulo.toLowerCase().split(/\s+/).join('')}.svg"></div>
         <div class="app__container">
           <div class="app__container__header">
             <h2>${titulo}</h2>

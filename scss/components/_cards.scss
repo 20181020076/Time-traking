@@ -1,6 +1,6 @@
 @mixin card ($color){
     border-radius: 20px;
-    height: 150px;
+    height: 200px;
     margin: 25px 20px;
     background-color: $color;
 }
@@ -8,37 +8,61 @@
     &__work{
         @include card($Light-red-work);
         position: relative;
+        &__img{
+            text-align: right;
+            padding-right: 15px;
+        }
         
         
     }
     &__play{
         @include card($Soft-blue-play);
         position: relative;
+        &__img{
+            text-align: right;
+            padding-right: 15px;
+        }
     }
     &__study{
         @include card($Light-red-study);
         position: relative;
+        &__img{
+            text-align: right;
+            padding-right: 15px;
+        }
     }
     &__exercise{
         @include card($Lime-green-exercise);
         position: relative;
+        &__img{
+            text-align: right;
+            padding-right: 15px;
+        }
     }
     &__social{
         @include card($Violet-social);
         position: relative;
+        &__img{
+            text-align: right;
+            padding-right: 15px;
+        }
     }
     &__selfcare{
         @include card($Soft-orange-self-care);
         position: relative;
+        &__img{
+            text-align: right;
+            padding-right: 15px;
+        }
     }
     &__container{
         position: absolute;
         display: flex;
         flex-direction: column;
-        height: 70%;
+        height: 75%;
         width: 100%;
         border: 1px solid black;
-        justify-content: space-around;
+        justify-content: center;
         background-color: $Dark-blue;
         border-radius: 20px;
         bottom: 0;
@@ -51,6 +75,7 @@
             justify-content: space-between;
             padding-left: 20px;
             padding-right: 20px;
+            margin-bottom: 10px;
             
         }
         &__info{
@@ -60,6 +85,13 @@
             align-items: center;
             padding-left: 20px;
             padding-right: 20px;
+            p{
+                font-size: 35px;
+            }
+            span{
+                font-size: 18px;
+                color: $Pale-Blue;
+            }
             
         }
         img{

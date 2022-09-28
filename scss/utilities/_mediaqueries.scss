@@ -1,0 +1,108 @@
+@media (min-width:575px){
+    .app{
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        &__user{
+            display: flex;
+            width: 30%;
+            height: 60%;
+            margin-top: 25px;
+            
+            &__description{
+                flex-direction: column;
+                height: 500px;
+
+                
+                &__image{
+                    width: 100%;
+                    text-align: left;
+                    height: 150px;
+                    align-items: center;
+                    margin-top: 50px;
+                    img{
+                        
+                        width: 120px;
+                        border-radius: 100%;
+                        border: white 3px solid;
+                        margin-left: 30px;
+                        
+
+                    }
+                }
+                &__text{
+                    font-size: 23px;
+                }
+            }
+            &__menu{
+                ul{
+                    gap: 15px;
+                    font-size: 30px;
+                    flex-direction: column;
+                    margin-left: 15px;
+                }
+            }
+
+        }
+        
+        &__cards{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            height: 80%;
+            justify-content: center;
+
+        }
+        
+        &__work{
+            width: 200px;
+            height: 250px;
+        }
+        &__play{
+            width: 200px;
+            height: 250px;
+        }
+        &__study{
+            width: 200px;
+            height: 250px;
+        }
+        &__exercise{
+            width: 200px;
+            height: 250px;
+        }
+        &__social{
+            width: 200px;
+            height: 250px;
+        }
+        &__selfcare{
+            width: 200px;
+            height: 250px;
+        }
+        &__container{
+            height: 180px;
+            &__info{
+                flex-direction: column;
+                text-align: left;
+                p{
+                    width: 100%;
+                }
+                span{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1024px){
+    .app{
+        &__user{
+            height: 550px;
+            &__description{
+                height: 400px;
+            }
+        }
+        
+    }
+}
