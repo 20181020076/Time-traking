@@ -1,0 +1,47 @@
+.app{
+    &__user{
+        margin: 0 20px;
+        padding-bottom: 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: $Dark-blue;
+        
+        
+        &__description{
+            height: 150px;
+            display: flex;
+            background-color: $Blue;
+            border-radius: 25px;
+            align-items: center;
+            &__image{
+                width: 30%;
+                text-align: center;
+                img{
+                    width: 60px;
+                }
+            }
+            &__text{
+                width: 70%;
+                text-align: left;
+            }
+        }
+        &__menu{
+            
+            padding: 20px 0;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                text-decoration: none;
+                list-style: none;
+                color: $Pale-Blue;
+                
+            }
+            .selected{
+                color: white;
+            }
+            
+        }
+    }
+}

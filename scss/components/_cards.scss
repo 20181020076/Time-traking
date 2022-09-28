@@ -1,0 +1,71 @@
+@mixin card ($color){
+    border-radius: 20px;
+    height: 150px;
+    margin: 25px 20px;
+    background-color: $color;
+}
+.app{
+    &__work{
+        @include card($Light-red-work);
+        position: relative;
+        
+        
+    }
+    &__play{
+        @include card($Soft-blue-play);
+        position: relative;
+    }
+    &__study{
+        @include card($Light-red-study);
+        position: relative;
+    }
+    &__exercise{
+        @include card($Lime-green-exercise);
+        position: relative;
+    }
+    &__social{
+        @include card($Violet-social);
+        position: relative;
+    }
+    &__selfcare{
+        @include card($Soft-orange-self-care);
+        position: relative;
+    }
+    &__container{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 100%;
+        border: 1px solid black;
+        justify-content: space-around;
+        background-color: $Dark-blue;
+        border-radius: 20px;
+        bottom: 0;
+        
+        &__header{
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+        &__info{
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+        }
+        img{
+            text-align: center;
+            width: 20px;
+            height: 5px;
+        }
+    }
+}

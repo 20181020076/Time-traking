@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&family=Rubik:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.app {
+  color: white;
+  background-color: #0f1424;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Rubik', sans-serif; }
+
+.app__user {
+  margin: 0 20px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1f4a; }
+  .app__user__description {
+    height: 150px;
+    display: flex;
+    background-color: #5847eb;
+    border-radius: 25px;
+    align-items: center; }
+    .app__user__description__image {
+      width: 30%;
+      text-align: center; }
+      .app__user__description__image img {
+        width: 60px; }
+    .app__user__description__text {
+      width: 70%;
+      text-align: left; }
+  .app__user__menu {
+    padding: 20px 0; }
+    .app__user__menu ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-decoration: none;
+      list-style: none;
+      color: #bdc1ff; }
+    .app__user__menu .selected {
+      color: white; }
+
+.app__work {
+  border-radius: 20px;
+  height: 150px;
+  margin: 25px 20px;
+  background-color: #ff8c66;
+  position: relative; }
+
+.app__play {
+  border-radius: 20px;
+  height: 150px;
+  margin: 25px 20px;
+  background-color: #56c2e6;
+  position: relative; }
+
+.app__study {
+  border-radius: 20px;
+  height: 150px;
+  margin: 25px 20px;
+  background-color: #ff5c7c;
+  position: relative; }
+
+.app__exercise {
+  border-radius: 20px;
+  height: 150px;
+  margin: 25px 20px;
+  background-color: #4acf81;
+  position: relative; }
+
+.app__social {
+  border-radius: 20px;
+  height: 150px;
+  margin: 25px 20px;
+  background-color: #7536d3;
+  position: relative; }
+
+.app__selfcare {
+  border-radius: 20px;
+  height: 150px;
+  margin: 25px 20px;
+  background-color: #f1c65b;
+  position: relative; }
+
+.app__container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+  border: 1px solid black;
+  justify-content: space-around;
+  background-color: #1c1f4a;
+  border-radius: 20px;
+  bottom: 0; }
+  .app__container__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .app__container__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .app__container img {
+    text-align: center;
+    width: 20px;
+    height: 5px; }
